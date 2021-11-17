@@ -1,6 +1,6 @@
-main {
+.main-banner {
   h2, p{
-    
+    bottom: 0;
   }
 }
 
@@ -9,4 +9,11 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
   gap: 18px;
+}
+
+#contact {
+  h2{
+  text-align: center;
+  padding: 20px;
+  }
 }

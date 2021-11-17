@@ -39,7 +39,7 @@ function App() {
       
       <>
       <Header name={myName}/>
-      <main>
+      <main className="main-banner">
         <Banner>
           <h2>Welcome to {myName} Collection</h2>
           <p>English Teacher and Translator tryin'a do something else, or the same, but in a different way. Here's a list of all the shyte I've put together so far.</p>
@@ -50,8 +50,8 @@ function App() {
         {listaDeProjetos.map((projeto) => {return(
           <Fragment key={projeto.id}>
             {projeto.title}
-            <Portfolio url={projeto.url}/>
-            <Repos logo={projeto.repo}/>
+            <Portfolio URL={Url}/>
+            <Repos logo={Github}/>
           </Fragment>
         )})}
       </div>
