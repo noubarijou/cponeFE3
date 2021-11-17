@@ -1,0 +1,29 @@
+#banner {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: url('https://southparkstudios.mtvnimages.com/uri/mgid:arc:content:shared.southpark.us.en:bc41965b-7342-11ea-a59c-0a7527021758?quality=0.7') no-repeat center center/cover;
+    /* background-size: cover;
+    background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button {
+      border: 1px solid black;
+    }
+    .banner-text {
+      color: white;
+      text-shadow: 5px 5px 5px #222;
+      text-align: center;
+      width: 80%;
+  
+      h2 {
+        font-size: 50px;
+      }
+  
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  

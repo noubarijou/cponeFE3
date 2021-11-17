@@ -1,0 +1,36 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	background: bisque;
+	color: white;
+	padding: 5px 20px;
+	z-index: 1;
+
+	h1 a {
+		color: #4f443e;
+		font-size: 30px;
+		text-decoration: none;
+	}
+
+	ul {
+		display: flex;
+		gap: 5px;
+		padding-top: 10px;
+	}
+
+	li {
+		list-style-type: none;
+	}
+
+	li a {
+		font-size: 1.1rem;
+		text-decoration: none;
+		color: #5a2729;
+		padding: 10px;
+		border-radius: 0px; //fuck border radius! why tf are ya'll tryin'a babyproof icons? it's not a table corner//
+	}
+}
