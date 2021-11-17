@@ -7,7 +7,7 @@ const Header = ({ name}) => {
       <h1><a href="#">{name}</a></h1>
       <nav>
         <ul>
-          <li><a href="#map">Colelction</a></li>
+          <li><a href="#map">Collection</a></li>
           <li><a href="#footer">Holler@Me</a></li>
         </ul>
       </nav>
