@@ -1,7 +1,7 @@
 div {
     #holler {
-
-        display: inline-flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax( 33%, 1fr));
         margin-left: 150px;
     }
     img {

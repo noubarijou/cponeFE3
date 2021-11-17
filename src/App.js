@@ -42,7 +42,7 @@ function App() {
       <main>
         <Banner>
           <h2>Welcome to {myName} Collection</h2>
-          <p>English Teacher and Translator tryin'a do something else, or the same, but in  different way. Here's a list of all the shyte I've put together so far.</p>
+          <p>English Teacher and Translator tryin'a do something else, or the same, but in a different way. Here's a list of all the shyte I've put together so far.</p>
         </Banner>
         <div className=""></div>
       </main>
@@ -56,6 +56,7 @@ function App() {
         )})}
       </div>
       <div id="contact">
+        <h2>Get in touch won't ya</h2>
       <Holler holler={Mail}/>
       <Holler holler={Github}/>
       <Holler holler={Linkedin}/>
