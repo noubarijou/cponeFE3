@@ -1,22 +1,15 @@
+#root {
 .main-banner {
 	h2,
 	p {
 		display: flex;
 		align-items: flex-end;
 	}
-
+}
 	#map {
 		padding-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
   }
-	.cards{
-			width: 350px !important;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-		}
-	#contact {
-			h2 {
-				text-align: center;
-				padding: 20px;
-			}
-		}
+
 	
 }

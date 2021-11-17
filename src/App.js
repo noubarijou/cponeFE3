@@ -45,23 +45,25 @@ function App() {
         </Banner>
         <div className=""></div>
       </main>
-      <div id="map">
+      <div id="map" className="d-grid gap-5">
         {listaDeProjetos.map((projeto) => {return(
-          <div className=" cards d-grid">
+          <div className="d-flex flex-column text-center h2">
           <Fragment key={projeto.id}>
             {projeto.title}
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-around">
             <Portfolio wwwImg={Url} wwwLink={projeto.url} logo={Github} repoLink={projeto.repo} />
             </div>
           </Fragment>
           </div>
         )})}
       </div>
-      <div id="contact">
+      <div className="text-center mt-5 mb-3 " id="contact">
         <h2>Get in touch won't ya</h2>
-      <Holler holler={Mail}/>
-      <Holler holler={Githuby}/>
-      <Holler holler={Linkedin}/>
+        <div className="d-flex  justify-content-around">
+      <Holler holler={Mail} urlContact="mailto:noubarijou@live.com"/>
+      <Holler holler={Githuby} urlContact="https://github.com/noubarijou"/>
+      <Holler holler={Linkedin} urlContact="https://www.linkedin.com/in/paulo-ventura-50079913/"/>
+      </div>
       </div>
       <Footer name={myName}/>
       </>
