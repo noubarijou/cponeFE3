@@ -3,11 +3,12 @@ import './index.scss';
 
 
 
-const Repos = ({logo}) => {
+const Repos = ({logo, repoLink}) => {
     return (
-        <div id="repos">
-        <img src={logo} alt="github-logo"/>
-        </div>
+        <><a href={repoLink}>
+        <img src={logo} alt="repo"/>
+        </a>
+        </>
     )
 }
 

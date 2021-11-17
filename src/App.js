@@ -50,8 +50,8 @@ function App() {
         {listaDeProjetos.map((projeto) => {return(
           <Fragment key={projeto.id}>
             {projeto.title}
-            <Portfolio URL={Url}/>
-            <Repos logo={Github}/>
+            <Portfolio wwwImg={Url} wwwLink={projeto.url} />
+            <Repos logo={Github} repoLink={projeto.repo} />
           </Fragment>
         )})}
       </div>

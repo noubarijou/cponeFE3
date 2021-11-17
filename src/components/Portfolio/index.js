@@ -1,11 +1,12 @@
 import './index.scss';
 
 
-
-const Portfolio = ({URL}) => {
+const Portfolio = ({wwwImg, wwwLink}) => {
     return (
-        <>
-        <img src={URL} alt="site"/>
+        // eslint-disable-next-line jsx-a11y/anchor-is-valid
+        <><a href={wwwLink}>
+        <img src={wwwImg} alt="site"/>
+        </a>
         </>
     )
 }
