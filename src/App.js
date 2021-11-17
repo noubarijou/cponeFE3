@@ -3,14 +3,13 @@ import Banner from './components/Banner';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Portfolio from './components/Portfolio';
-import Repos from './components/Repos';
 import Holler from './components/Holler';
 import './App.scss';
 import Mail from '../src/images/mail.png';
 import Github from '../src/images/github.png';
 import Linkedin from '../src/images/linkedin.png';
 import Url from '../src/images/www.png';
-
+import Githuby from './images/hero_github.png';
 
 
 function App() {
@@ -41,24 +40,27 @@ function App() {
       <Header name={myName}/>
       <main className="main-banner">
         <Banner>
-          <h2>Welcome to {myName} Collection</h2>
+          <h2 className="mt-5">Welcome to {myName} Collection</h2>
           <p>English Teacher and Translator tryin'a do something else, or the same, but in a different way. Here's a list of all the shyte I've put together so far.</p>
         </Banner>
         <div className=""></div>
       </main>
       <div id="map">
         {listaDeProjetos.map((projeto) => {return(
+          <div className=" cards d-grid">
           <Fragment key={projeto.id}>
             {projeto.title}
-            <Portfolio wwwImg={Url} wwwLink={projeto.url} />
-            <Repos logo={Github} repoLink={projeto.repo} />
+            <div className="d-flex justify-content-between">
+            <Portfolio wwwImg={Url} wwwLink={projeto.url} logo={Github} repoLink={projeto.repo} />
+            </div>
           </Fragment>
+          </div>
         )})}
       </div>
       <div id="contact">
         <h2>Get in touch won't ya</h2>
       <Holler holler={Mail}/>
-      <Holler holler={Github}/>
+      <Holler holler={Githuby}/>
       <Holler holler={Linkedin}/>
       </div>
       <Footer name={myName}/>

@@ -6,7 +6,7 @@
     background-attachment: fixed; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     button {
       border: 1px solid black;
@@ -15,7 +15,7 @@
       color: white;
       text-shadow: 5px 5px 5px #222;
       text-align: center;
-      width: 80%;
+      width: 90%;
   
       h2 {
         font-size: 50px;

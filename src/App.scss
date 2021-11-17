@@ -1,19 +1,22 @@
 .main-banner {
-  h2, p{
-    bottom: 0;
-  }
-}
+	h2,
+	p {
+		display: flex;
+		align-items: flex-end;
+	}
 
-#map {
-  padding-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 4fr));
-  gap: 18px;
-}
-
-#contact {
-  h2{
-  text-align: center;
-  padding: 20px;
+	#map {
+		padding-top: 20px;
   }
+	.cards{
+			width: 350px !important;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+		}
+	#contact {
+			h2 {
+				text-align: center;
+				padding: 20px;
+			}
+		}
+	
 }
